@@ -1,6 +1,11 @@
 # prometheus-minimum-viable-sd
 
-The Minimum-Viable service discovery plugin for [Prometheus](https://prometheus.io).
+The Minimum Viable service discovery plugin for [Prometheus](https://prometheus.io).
+
+**tl;dr:** Each node that has services exposing Prometheus metrics has a JSON
+file defining its services (usually generated via configuration management).
+Each node sends its JSON to a central daemon running alongside the Prometheus
+server that compiles all services into one big list for Prometheus.
 
 ## Installation and usage
 
